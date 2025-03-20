@@ -99,8 +99,6 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
    ![A 3D view of an early version of just the PCB board](./pictures/16.png)
 1. A 3D view of another revision of the PCB board
    ![A 3D view of another revision of the PCB board](./pictures/17.png)
-1. The final board design
-   ![The final board design](./pictures/18.png)
 1. A 3D view of the final revision of just the PCB board
    ![A 3D view of the final revision of just the PCB board](./pictures/19.png)
 1. The final working prototypes! (Not using the fabbed boards yet, stay tuned!)
