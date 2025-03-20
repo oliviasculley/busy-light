@@ -5,9 +5,10 @@
 This repo contains the schematics, PCB files and media for a synced busy-light
 control box that can be used to communicate up to 4 states, indicated with LEDs. The wireless communication is fault-tolerant and utilizes encrypted ESP-NOW for communication, which means that it doesn't have any other dependencies besides power and your communications are secure!
 
-## Schematic
+## Schematic and PCB
 
 ![Busy light schematic](./busy-light-1.1.0/busy-light-rev-1.1.0.png)
+![A 3D view of the v1.1.0 revision of the PCB board](./pictures/19.png)
 
 ## Components
 
@@ -99,8 +100,8 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
    ![A 3D view of an early version of just the PCB board](./pictures/16.png)
 1. A 3D view of another revision of the PCB board
    ![A 3D view of another revision of the PCB board](./pictures/17.png)
-1. A 3D view of the final revision of just the PCB board
-   ![A 3D view of the final revision of just the PCB board](./pictures/19.png)
+1. A 3D view of the v1.1.0 revision of just the PCB board
+   ![A 3D view of the v1.1.0 revision of just the PCB board](./pictures/19.png)
 1. The final working prototypes! (Not using the fabbed boards yet, stay tuned!)
    ![The final working prototypes! (Not using the fabbed boards yet, stay tuned!)](./pictures/20.jpg)
 
