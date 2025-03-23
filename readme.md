@@ -59,6 +59,7 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
 ## Repository structure
 - `busy-light-1.0.0/` contains the original version of the board that I created on a protoboard
 - `busy-light-1.1.0/` contains the fabbed version of the board. I have yet to receive these boards and test them so no guarantees that it actually works! (although I have high hopes)
+- `busy-light-1.1.1/` contains a new version that should be easier to solder and have better WiFi reception, but hasn't been fabbed yet.
 
 ## Potential future changes
 - Add mounting for PCB (Mounting holes?)
