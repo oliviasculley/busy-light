@@ -64,10 +64,17 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
 ## Repository structure
 - `busy-light-1.0.0/` contains the original prototypes I made with protoboards
 - `busy-light-1.1.0/` contains the fabbed version of the board
+  - There's not enough clearance for the micro-USB cable, so you will have to file
+    down the head of the cable or find a lower-profile connection
+  - Getting the stranded-core wires through the holes is really annoying, I need
+    to make the holes a bit bigger
 - `busy-light-1.1.1/` contains a new version that should be easier to solder and
   have better WiFi reception, but hasn't been fabbed yet
 
 ## Potential future changes
+- Flip the ESP8266 for more clearance for regular micro-USB cables
+- Enlarge the holes or find a better connecting solution for the stranded core
+  wires
 - Add mounting for PCB (Mounting holes?)
 - Add mounting for Micro-USB cable
 - Use FreeRTOS if I feel like writing a lot of boilerplate
