@@ -3,7 +3,10 @@
 ![Image of the busy light control boxes](./pictures/20.jpg)
 
 This repo contains the schematics, PCB files and media for a synced busy-light
-control box that can be used to communicate up to 4 states, indicated with LEDs. The wireless communication is fault-tolerant and utilizes encrypted ESP-NOW for communication, which means that it doesn't have any other dependencies besides power and your communications are secure!
+control box that can be used to communicate up to 4 states, indicated with LEDs.
+The wireless communication is fault-tolerant and utilizes encrypted ESP-NOW for
+communication, which means that it doesn't have any other dependencies besides
+power and your communications are secure!
 
 ## Schematic and PCB
 
@@ -47,9 +50,11 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
 
 - Use blue and white leads for button switches
 - Use 150 ohm resistors for all LEDs
-- For the Arduino IDE, you will need the [ESP8266 library](https://github.com/esp8266/Arduino) installed
+- For the Arduino IDE, you will need the
+  [ESP8266 library](https://github.com/esp8266/Arduino) installed
 - Epoxy putty around the cable is optional but recommended!
-- To order the boards from JLCPCB yourself, visit the releases to download the compiled gerber files.
+- To order the boards from JLCPCB yourself, visit the releases to download the
+  compiled gerber files
 - The boards are set to 9600 baud serial
 - Use serial to determine the board's mac addresses
 - Then, fill in `BROADCAST_ADDRESS[]` with both boards' mac addresses
@@ -57,9 +62,10 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
 - (Optional) Set a new 16 char encryption key for better security
 
 ## Repository structure
-- `busy-light-1.0.0/` contains the original version of the board that I created on a protoboard
-- `busy-light-1.1.0/` contains the fabbed version of the board. I have yet to receive these boards and test them so no guarantees that it actually works! (although I have high hopes)
-- `busy-light-1.1.1/` contains a new version that should be easier to solder and have better WiFi reception, but hasn't been fabbed yet.
+- `busy-light-1.0.0/` contains the original prototypes I made with protoboards
+- `busy-light-1.1.0/` contains the fabbed version of the board
+- `busy-light-1.1.1/` contains a new version that should be easier to solder and
+  have better WiFi reception, but hasn't been fabbed yet
 
 ## Potential future changes
 - Add mounting for PCB (Mounting holes?)
@@ -80,13 +86,14 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
    ![Wired up prototype boards. Do you see the mistake?](./pictures/5.jpg)
 1. Adding screw terminals
    ![Adding screw terminals](./pictures/6.jpg)
-1. Fixing my mistake (Please excuse the soldering, most of this project was done after midnight 😅😅😅)
-   ![Fixing my mistake](./pictures/7.jpg)
+1. Fixing my mistake (Please excuse the soldering, most of this project was done
+   after midnight 😅😅😅) ![Fixing my mistake](./pictures/7.jpg)
 1. Wiring up buttons and lights
    ![Wiring up buttons and lights](./pictures/8.jpg)
 1. Installing switches into control boxes
    ![Installing switches into control boxes](./pictures/9.jpg)
-1. Adding a pull-up resistor to pin D0. Turns out that the ESP8266 doesn't have a usable internal pull-up on D0. Something to keep in mind!
+1. Adding a pull-up resistor to pin D0. Turns out that the ESP8266 doesn't have
+   a usable internal pull-up on D0. Something to keep in mind!
    ![Adding a pull-up resistor](./pictures/10.jpg)
 1. The boxes mid-assembly!
    ![The boxes mid-assembly!](./pictures/11.jpg)
@@ -103,8 +110,18 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
    ![A 3D view of another revision of the PCB board](./pictures/17.png)
 1. A 3D view of the v1.1.0 revision of just the PCB board
    ![A 3D view of the v1.1.0 revision of just the PCB board](./pictures/19.png)
-1. The final working prototypes! (Not using the fabbed boards yet, stay tuned!)
-   ![The final working prototypes! (Not using the fabbed boards yet, stay tuned!)](./pictures/20.jpg)
+1. The final working prototypes (Not using the fabbed boards)
+   ![The final working prototypes (Not using the fabbed boards)](./pictures/20.jpg)
+1. The fabbed boards! My logo in the silkscreen came out great!
+   ![The fabbed boards! My logo in the silkscreen came out great!](./pictures/21.jpg)
+1. Doing some cable management
+   ![Doing some cable management](./pictures/22.jpg)
+1. The fabbed boards work!
+   ![The fabbed boards work!](./pictures/23.jpg)
+1. A view of all the wires to the PCB
+   ![A view of all the wires to the PCB](./pictures/24.jpg)
+1. Trimming the leads on the back of the PCB
+   ![Trimming the leads on the back of the PCB](./pictures/25.jpg)
 
 ## Misc Notes
 
