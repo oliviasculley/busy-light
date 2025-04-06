@@ -68,7 +68,7 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
     down the head of the cable or find a lower-profile connection
   - Getting the stranded-core wires through the holes is really annoying, I need
     to make the holes a bit bigger
-- `busy-light-1.1.1/` contains a new version that should be easier to solder and
+- `busy-light-1.2.0/` contains a new version that should be easier to solder and
   have better WiFi reception, but hasn't been fabbed yet
 
 ## Potential future changes
