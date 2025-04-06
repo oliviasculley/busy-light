@@ -1653,7 +1653,7 @@
 		)
 		(uuid "35e0e176-9f78-4929-98ee-1e3bbe6af53e")
 	)
-	(text "1.1.1"
+	(text "1.2.0"
 		(exclude_from_sim no)
 		(at 271.526 193.548 0)
 		(effects
@@ -3196,7 +3196,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 67.31 0)
 			(effects
 				(font
@@ -3262,7 +3262,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 136.144 100.076 90)
 			(effects
 				(font
@@ -3330,7 +3330,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 105.41 0)
 			(effects
 				(font
@@ -3602,7 +3602,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 59.69 0)
 			(effects
 				(font
@@ -3668,7 +3668,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 54.864 126.746 90)
 			(effects
 				(font
@@ -4009,7 +4009,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 44.45 0)
 			(effects
 				(font
@@ -4074,7 +4074,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 36.83 0)
 			(effects
 				(font
@@ -4337,7 +4337,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 74.93 0)
 			(effects
 				(font
@@ -4535,7 +4535,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 136.144 163.576 90)
 			(effects
 				(font
@@ -4603,7 +4603,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 113.03 0)
 			(effects
 				(font
@@ -4668,7 +4668,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 151.13 0)
 			(effects
 				(font
@@ -4733,7 +4733,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 21.59 0)
 			(effects
 				(font
@@ -4799,7 +4799,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 54.864 101.346 90)
 			(effects
 				(font
@@ -4867,7 +4867,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 97.79 0)
 			(effects
 				(font
@@ -4932,7 +4932,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 128.27 0)
 			(effects
 				(font
@@ -4998,7 +4998,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 136.144 131.826 90)
 			(effects
 				(font
@@ -5510,7 +5510,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 143.51 0)
 			(effects
 				(font
@@ -5716,7 +5716,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 120.65 0)
 			(effects
 				(font
@@ -5781,7 +5781,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 82.55 0)
 			(effects
 				(font
@@ -5912,7 +5912,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 52.07 0)
 			(effects
 				(font
@@ -5977,7 +5977,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 135.89 0)
 			(effects
 				(font
@@ -6042,7 +6042,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 29.21 0)
 			(effects
 				(font
@@ -6242,7 +6242,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Pin:Pin_D1.3mm_L11.0mm"
+		(property "Footprint" "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork"
 			(at 229.87 90.17 0)
 			(effects
 				(font
@@ -6308,7 +6308,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 54.864 152.146 90)
 			(effects
 				(font

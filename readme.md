@@ -68,13 +68,16 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
     down the head of the cable or find a lower-profile connection
   - Getting the stranded-core wires through the holes is really annoying, I need
     to make the holes a bit bigger
-- `busy-light-1.2.0/` contains a new version that should be easier to solder and
-  have better WiFi reception, but hasn't been fabbed yet
+- `busy-light-1.2.0/` contains a new version that hasn't been fabbed yet and has
+  the following changes:
+  - Bigger holes for stranded-core wires
+  - SMD resistors
+  - Flipped ESP8266 for better cable clearance
+  - More efficient board 😄
 
 ## Potential future changes
-- Flip the ESP8266 for more clearance for regular micro-USB cables
-- Enlarge the holes or find a better connecting solution for the stranded core
-  wires
+- Find a better connecting solution for the stranded core wires, maybe turrent
+  terminals or something
 - Add mounting for PCB (Mounting holes?)
 - Add mounting for Micro-USB cable
 - Use FreeRTOS if I feel like writing a lot of boilerplate
