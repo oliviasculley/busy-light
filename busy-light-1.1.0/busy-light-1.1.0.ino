@@ -40,6 +40,7 @@ bool receive = true;
 int rebroadcastCounter = 0;
 #define REBROADCAST_INTERVAL 100
 #define HOLD_THRESHOLD 10
+int resetHeldCounter = 0;
 int heldCounter = 0;
 
 void setup() {
@@ -86,15 +87,24 @@ void setup() {
 }
 
 void loop() {
-  if (!digitalRead(GREEN_BUTTON))
+  bool greenPressed = !digitalRead(GREEN_BUTTON);
+  bool yellowPressed = !digitalRead(YELLOW_BUTTON);
+  bool redPressed = !digitalRead(RED_BUTTON);
+  
+  if (resetHeldCounter > HOLD_THRESHOLD && greenPressed)
+    sendingStatus.status = NONE;
+  else if (greenPressed) {
     sendingStatus.status = NO_CALL;
+    resetHeldCounter++;
+  } else
+    resetHeldCounter = 0;
 
-  if (!digitalRead(YELLOW_BUTTON))
+  if (yellowPressed)
     sendingStatus.status = CAUTION;
 
-  if (heldCounter > HOLD_THRESHOLD && !digitalRead(RED_BUTTON))
+  if (heldCounter > HOLD_THRESHOLD && redPressed) {
     sendingStatus.status = VIDEO_CALL;
-  else if (!digitalRead(RED_BUTTON)) {
+  } else if (redPressed) {
     heldCounter++;
     sendingStatus.status = AUDIO_CALL;
   } else

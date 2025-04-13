@@ -3,7 +3,7 @@
 ![Image of the busy light control boxes](./pictures/20.jpg)
 
 This repo contains the schematics, PCB files and media for a synced busy-light
-control box that can be used to communicate up to 4 states, indicated with LEDs.
+control box that can be used to communicate up to 5 states, indicated with LEDs.
 The wireless communication is fault-tolerant and utilizes encrypted ESP-NOW for
 communication, which means that it doesn't have any other dependencies besides
 power and your communications are secure!
@@ -60,6 +60,14 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
 - Then, fill in `BROADCAST_ADDRESS[]` with both boards' mac addresses
 - Toggle the `#if true` between true and false to flash corresponding boxes
 - (Optional) Set a new 16 char encryption key for better security
+
+## Instructions
+
+- The lights in the buttons corresponds to your current state
+- The lights next to the buttons corresponds to the other device's state
+- Press any button to light up the corresponding light on the other device
+- Hold down the red button to light up both yellow and red at the same time
+- Hold down the green button to turn off all lights
 
 ## Repository structure
 - `busy-light-1.0.0/` contains the original prototypes I made with protoboards
