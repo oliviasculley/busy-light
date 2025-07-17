@@ -24,6 +24,7 @@ const uint8_t BUTTONS[] = { RED_BUTTON, YELLOW_BUTTON, GREEN_BUTTON };
 enum Status { NONE, NO_CALL, CAUTION, AUDIO_CALL, VIDEO_CALL };
 Status selfStatus = NONE;
 Status otherStatus = NONE;
+unsigned long lastSelfStatusChangeTime = 0;
 
 // Toggle me to flash corresponding boxes
 #if true
@@ -40,6 +41,7 @@ bool receive = true;
 int rebroadcastCounter = 0;
 #define REBROADCAST_INTERVAL 100
 #define HOLD_THRESHOLD 10
+int resetHeldCounter = 0;
 int heldCounter = 0;
 
 void setup() {
@@ -66,6 +68,8 @@ void setup() {
   sendingConfirmation.status = NONE;
   sendingConfirmation.confirm = true;
 
+  lastSelfStatusChangeTime = 0;
+
   WiFi.mode(WIFI_STA);
   Serial.print("ESP Board MAC Address:  ");
   Serial.println(WiFi.macAddress());
@@ -86,19 +90,38 @@ void setup() {
 }
 
 void loop() {
-  if (!digitalRead(GREEN_BUTTON))
-    sendingStatus.status = NO_CALL;
+  if (Serial.available() && Serial.readString().equals("reset\n"))
+    ESP.restart();
 
-  if (!digitalRead(YELLOW_BUTTON))
+  bool greenPressed = !digitalRead(GREEN_BUTTON);
+  bool yellowPressed = !digitalRead(YELLOW_BUTTON);
+  bool redPressed = !digitalRead(RED_BUTTON);
+  
+  if (resetHeldCounter > HOLD_THRESHOLD && greenPressed)
+    sendingStatus.status = NONE;
+  else if (greenPressed) {
+    sendingStatus.status = NO_CALL;
+    resetHeldCounter++;
+  } else
+    resetHeldCounter = 0;
+
+  if (yellowPressed)
     sendingStatus.status = CAUTION;
 
-  if (heldCounter > HOLD_THRESHOLD && !digitalRead(RED_BUTTON))
+  if (heldCounter > HOLD_THRESHOLD && redPressed) {
     sendingStatus.status = VIDEO_CALL;
-  else if (!digitalRead(RED_BUTTON)) {
+  } else if (redPressed) {
     heldCounter++;
     sendingStatus.status = AUDIO_CALL;
   } else
     heldCounter = 0;
+
+  if (lastSelfStatusChangeTime != 0 &&
+      sendingStatus.status == NO_CALL &&
+      (millis() - lastSelfStatusChangeTime) > (6 * 60 * 60 * 1000)) {
+    sendingStatus.status = NONE;
+    lastSelfStatusChangeTime = 0;
+  }
 
   sendSelfStatus();
   delay(50);
@@ -121,13 +144,15 @@ void sendSelfStatus() {
 
 void readStatus(uint8_t * mac, uint8_t * incomingData, uint8_t len) {
   if (((Broadcast*) incomingData)->confirm) {
+    if (selfStatus != (Status) ((Broadcast*) incomingData)->status)
+      lastSelfStatusChangeTime = millis();
     selfStatus = (Status) ((Broadcast*) incomingData)->status;
     Serial.print("Set self status ");
     Serial.println(getStatusStr(selfStatus));
     setButtonLights(selfStatus);
   } else {
     sendingConfirmation.status = ((Broadcast*) incomingData)->status;
-    Serial.print("Sending other status ");
+    Serial.print("Sending other status confirmation ");
     Serial.println(getStatusStr((Status) sendingConfirmation.status));
 
     uint8_t result = esp_now_send(
@@ -135,7 +160,10 @@ void readStatus(uint8_t * mac, uint8_t * incomingData, uint8_t len) {
       (uint8_t *) &sendingConfirmation,
       sizeof(sendingConfirmation)
     );
-    if (result != 0) return;
+    if (result != 0) {
+      Serial.println("Error sending confirmation!!");
+      return;
+    }
 
     otherStatus = (Status) ((Broadcast*) incomingData)->status;
     
