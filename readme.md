@@ -68,6 +68,7 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
 - Press any button to light up the corresponding light on the other device
 - Hold down the red button to light up both yellow and red at the same time
 - Hold down the green button to turn off all lights
+- The green status lights will automatically shut off after 6 hours in the green status
 
 ## Repository structure
 - `busy-light-1.0.0/` contains the original prototypes I made with protoboards
@@ -89,6 +90,7 @@ Estimated Total: around $66 for 2 boxes, or around $33 each
 - Add mounting for PCB (Mounting holes?)
 - Add mounting for Micro-USB cable
 - Use FreeRTOS if I feel like writing a lot of boilerplate
+- CAD an 3D printable enclosure to use instead
 
 ## Project Log
 
